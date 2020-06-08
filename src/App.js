@@ -11,7 +11,7 @@ import Trips from './components/views/Trips/TripsContainer';
 import CountriesContainer from './components/views/Countries/CountriesContainer';
 import CountryContainer from './components/views/Country/CountryContainer';
 import RegionsContainer from './components/views/Regions/RegionsContainer';
-import TripsContainer from './components/views/Trips/TripsContainer';
+import TripContainer from './components/views/Trip/TripContainer';
 import Info from './components/views/Info/Info';
 import NotFound from './components/views/NotFound/NotFound';
 
@@ -45,7 +45,7 @@ class App extends React.Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/trips' component={Trips} />
             {/* TODO - add more routes for other views */}
-            <Route path='/trips/:id' component={TripsContainer} />
+            <Route path='/trip/:id' component={TripContainer} />
             <Route exact path='/countries' component={CountriesContainer} />
             <Route path='/country/:id' component={CountryContainer} />
             <Route exact path='/regions' component={RegionsContainer} />
